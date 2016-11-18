@@ -1,0 +1,70 @@
+# ~/.tmuxinator/teste.yml
+
+name: kyp
+root: $PROJECT_PATH
+
+windows:
+  - kyp-auth:
+      layout: main-vertical
+      root: kyp-auth
+      panes:
+        - 
+        - server:
+          - go get ./...
+          - go build
+          - ./kyp-auth
+  - kyp-env:
+      layout: main-vertical
+      root: kyp-env
+      panes:
+        - 
+  - kyp-gateway:
+      layout: main-vertical
+      root: kyp-gateway
+      panes:
+        - 
+        - server:
+          - go get ./...
+          - go build
+          - ./kyp-gateway
+  - kyp-proxy:
+      layout: main-vertical
+      root: kyp-proxy
+      panes:
+        - 
+        - server:
+          - go get ./...
+          - go build
+          - ./kyp-proxy
+  - kyp-secret-key:
+      layout: main-vertical
+      root: kyp-secret-key
+      panes:
+        - 
+        - server:
+          - go get ./...
+          - go build
+          - ./kyp-secret-key
+  - kyp-structs:
+      layout: main-vertical
+      root: kyp-structs
+      panes:
+        - 
+  - kyp-todo: 
+      layout: main-vertical
+      root: kyp-todo
+      panes:
+        - 
+        - server:
+          - go get ./...
+          - go build
+          - ./kyp-todo
+  - kyp-users:
+      layout: main-vertical
+      root: kyp-users
+      panes:
+        - 
+        - server:
+          - go get ./...
+          - go build
+          - ./kyp-users
