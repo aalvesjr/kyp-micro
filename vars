@@ -1,0 +1,33 @@
+export PROJECT_PATH=`pwd`
+
+# TODO
+export KYP_TODO_DB="host=localhost dbname=kyp_todo_dev sslmode=disable"
+export KYP_TODO_PORT=3001
+export KYP_NSQ_URL=localhost:4151
+export KYP_NSQ_LOOKUPD_URL=docker:4161
+export KYP_SECRET_KEY=c91267c27a8599ca0480ea505487d052e3b63a1dd39819db853225a518200399
+
+# AUTH
+export KYP_AUTH_DB="host=localhost dbname=kyp_auth_dev sslmode=disable"
+export KYP_USERS_ENDPOINT=http://localhost:3003/v1/users
+export KYP_AUTH_PORT=3000
+export KYP_SECRET_KEY=c91267c27a8599ca0480ea505487d052e3b63a1dd39819db853225a518200399
+
+# Secret Key
+export KYP_SECRET_KEY_PORT=3002
+
+# Users
+export KYP_USERS_DB="host=localhost dbname=kyp_users_dev sslmode=disable"
+export KYP_USERS_PORT=3003
+export KYP_SECRET_KEY=c91267c27a8599ca0480ea505487d052e3b63a1dd39819db853225a518200399
+
+# API Gateway
+export KYP_GATEWAY_PORT=3004
+export KYP_AUTH_ENDPOINT=http://localhost:3000/v1/token
+export KYP_TODO_ENDPOINT=http://localhost:3001/v1/todos
+export KYP_USERS_ENDPOINT=http://localhost:3003/v1/users
+export KYP_SECRET_KEY=c91267c27a8599ca0480ea505487d052e3b63a1dd39819db853225a518200399
+
+# Proxy
+export KYP_GATEWAY_HOST=localhost:3004
+export KYP_PROXY_PORT=8080
